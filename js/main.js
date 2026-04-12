@@ -1,4 +1,5 @@
-import { GOOGLE_API_KEY } from "./apikey.js";
+// Depreciable
+// import { GOOGLE_API_KEY } from "./apikey.js";
 
 // HERO CLASIFICATION SLIDER
 
@@ -69,9 +70,9 @@ yearEl.textContent = currentYear;
 // Fetchs the data from the google sheet classification
 async function getSheetData() {
   try {
-    // const res = await fetch("https://docs.google.com/spreadsheets/d/1AI-Lj_R4JQWqo1ud3oWHEcnhUJtFPQCcYW_AoJbP8Mw/gviz/tq?sheet=Clasificacion");
+    const res = await fetch("https://docs.google.com/spreadsheets/d/1AI-Lj_R4JQWqo1ud3oWHEcnhUJtFPQCcYW_AoJbP8Mw/gviz/tq?sheet=Clasificacion");
 
-    const res = await fetch(GOOGLE_API_KEY);
+    // const res = await fetch(GOOGLE_API_KEY);
 
     if (!res.ok) {
       throw new Error("Could not fetch resource");
