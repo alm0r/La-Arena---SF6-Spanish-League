@@ -1,8 +1,10 @@
 // check apikey.js comment if u want to make it work
 // import { GOOGLE_API_KEY } from "./apikey.js";
-require("dotenv").config();
+import dotenv from "dotenv";
+dotenv.config();
 
 const apiKey = process.env.GOOGLE_KEY;
+console.log(apiKey);
 
 // HERO CLASIFICATION SLIDER
 
