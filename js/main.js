@@ -1,6 +1,3 @@
-// Depreciable
-// import { GOOGLE_API_KEY } from "./apikey.js";
-
 // HERO CLASIFICATION SLIDER
 
 const previousSlide = document.querySelector(".ph-arrow-circle-left");
