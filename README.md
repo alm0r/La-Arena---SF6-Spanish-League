@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/887801f1-de79-4ba5-8302-f8687138d645/deploy-status)](https://app.netlify.com/projects/lighthearted-salamander-6be33b/deploys)
+
 # My Awesome Project
 
 This sites serves as the main reference for the different Street Fighter 6 leagues organized by the spanish community.
