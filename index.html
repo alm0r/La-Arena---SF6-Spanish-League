@@ -493,10 +493,9 @@
         <div class="contact-container">
           <h2 class="contact-title">Contacto</h2>
 
-          <form>
-            <!-- <input name="name" type="text" class="feedback-input" placeholder="Name" />    -->
-            <input name="email" type="text" class="feedback-input" placeholder="Email" />
-            <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
+          <form name="contact" method="POST" data-netlify="true">
+            <label><input name="email" type="email" class="feedback-input" placeholder="Email" /></label>
+            <label><textarea name="name" type="text" class="feedback-input" placeholder="Comment"></textarea></label>
             <input type="submit" value="ENVIAR" />
           </form>
         </div>
