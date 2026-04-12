@@ -1,10 +1,4 @@
-// check apikey.js comment if u want to make it work
-// import { GOOGLE_API_KEY } from "./apikey.js";
-import dotenv from "dotenv";
-dotenv.config();
-
-const apiKey = process.env.GOOGLE_KEY;
-console.log(apiKey);
+import { GOOGLE_API_KEY } from "./apikey.js";
 
 // HERO CLASIFICATION SLIDER
 
@@ -76,7 +70,8 @@ yearEl.textContent = currentYear;
 async function getSheetData() {
   try {
     // const res = await fetch("https://docs.google.com/spreadsheets/d/1AI-Lj_R4JQWqo1ud3oWHEcnhUJtFPQCcYW_AoJbP8Mw/gviz/tq?sheet=Clasificacion");
-    const res = await fetch(apiKey);
+
+    const res = await fetch(GOOGLE_API_KEY);
 
     if (!res.ok) {
       throw new Error("Could not fetch resource");
