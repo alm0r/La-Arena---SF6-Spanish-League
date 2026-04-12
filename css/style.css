@@ -375,13 +375,13 @@ header a:hover {
 
 .ph-arrow-circle-left {
   position: absolute;
-  top: 50%;
-  left: 0%;
+  top: 105%;
+  left: 40%;
 }
 
 .ph-arrow-circle-right {
-  top: 50%;
-  right: 0%;
+  top: 105%;
+  right: 40%;
   position: absolute;
 }
 
