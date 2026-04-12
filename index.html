@@ -1,21 +1,520 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="es">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Website dedicated to the Street Fighter 6 Spanish League" />
-    <meta name="keywords" content="street fighter 6, spanish, league, EVO, stargg, esport, EWC, saudi arabia, riyadh, capcom, japan, buff ED" />
+    <meta name="keywords" content="street fighter 6, spanish, league, EVO, stargg, esport, japan, capcom, buff ED" />
 
     <title>La Arena &ndash; Street Figher 6 Spanish League</title>
     <!-- external CSS link -->
-    <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+    <!-- cookies -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.1.0/dist/cookieconsent.css" />
+    <link rel="stylesheet" href="css/cc--dark-turquoise.css" />
+    <!-- Goggle Fonts: Roboto / Science Gothic -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Science+Gothic:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Icons -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" />
+    <!-- Styles -->
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <!-- JS scripts -->
+    <script type="module" defer src="js/main.js"></script>
+    <script type="module" defer src="js/cookieconsent-config.js"></script>
   </head>
   <body>
     <header>
-      <h1>Bienvenidos a la Arena</h1>
+      <div class="header-container">
+        <div class="header-left-container">
+          <a id="discord-header" href="#">Discord</a>
+        </div>
+        <nav class="header-right-container">
+          <ul class="main-nav-list">
+            <li><a class="main-nav-link" id="element-1" href="#how-it-works-id">Normativa</a></li>
+            <li>
+              <a class="main-nav-link elemnt-3" href="#faq-id">F.A.Q</a>
+            </li>
+            <li><a class="main-nav-link elemnt-2" href="#calendario">Calendario</a></li>
+
+            <li><a class="main-nav-link elemnt-4" href="#contact-id">Contacto</a></li>
+          </ul>
+        </nav>
+        <i class="ph ph-list list-icon-header nav-icons"></i>
+        <i class="ph ph-x close-icon-header nav-icons"></i>
+      </div>
     </header>
-    <script type="text/javascript" src="js/main.js"></script>
+    <main>
+      <!-- HERO -->
+      <section class="hero-parent-container">
+        <div class="left-side-hero-container">
+          <div class="hero-section-text">
+            <h1>¡Bienvenidos <span class="h1-accent">Guerreros!</span></h1>
+            <h3>
+              Presentamos <b class="la-arena-text">LA ARENA</b>, la nueva liga de Street Fighter 6 para aquellos jugadores españoles que quieran
+              ponerse a prueba y mejorar sus habilidades de combate.
+            </h3>
+            <h3>
+              Cada semana, 16 jugadores se enfrentaran en dos divisiones para intentar dominar <b class="la-arena-text">LA ARENA</b>, acumulando
+              puntos durante 8 jornadas hasta llegar a un gran torneo final.
+            </h3>
+          </div>
+          <div class="hero-section-logo">
+            <img class="arena-main-logo" src="img/logo.webp.webp" alt="La ARENA logo" />
+          </div>
+        </div>
+        <div class="right-side-hero-container">
+          <h2 class="clasification-title">Clasificacion</h2>
+          <p class="clasification-subtitle">Actualizado a Jornada 2</p>
+          <div class="clasification-parent-container">
+            <i class="clasification-icons ph ph-arrow-circle-left"></i>
+            <div class="slides">
+              <div class="clasificación-container container-division-a display-slide">
+                <div class="player-0 clasification-position">
+                  <p class="division-category" id="player-0-division">A</p>
+                  <p class="division-position division-postiion-0" id="player-0-position">01</p>
+                  <img src="img/players/RIVARSAL.png" class="player-img rivarsal-img division-position-img-0" id="player-0-img" alt="" />
+                  <p class="division-points division-points-position-0" id="player-0-points">40pts</p>
+                </div>
+
+                <div class="player-1 clasification-position">
+                  <p class="division-category division-a" id="player-1-division">A</p>
+                  <p class="division-position division-postiion-1" id="player-1-position">01</p>
+                  <img src="img/players/DEIVER.png" class="player-img deiver-img division-position-img-1" id="player-1-img" alt="" />
+                  <p class="division-points division-points-position-1" id="player-1-points">40pts</p>
+                </div>
+
+                <div class="player-2 clasification-position">
+                  <p class="division-category division-a" id="player-2-division">A</p>
+                  <p class="division-position division-postiion-2" id="player-2-position">01</p>
+                  <img src="img/players/HARV.png" class="player-img harv-img division-position-img-2" id="player-2-img" alt="" />
+                  <p class="division-points division-points-position-2" id="player-2-points">40pts</p>
+                </div>
+
+                <div class="player-3 clasification-position">
+                  <p class="division-category division-a" id="player-3-division">A</p>
+                  <p class="division-position division-postiion-3" id="player-3-position">01</p>
+                  <img src="img/players/ULTRA_PIP.png" class="player-img ultrapip-img division-position-img-3" id="player-3-img" alt="" />
+                  <p class="division-points division-points-position-3" id="player-3-points">40pts</p>
+                </div>
+
+                <div class="player-4 clasification-position">
+                  <p class="division-category division-a" id="player-4-division">A</p>
+                  <p class="division-position division-postiion-4" id="player-4-position">02</p>
+                  <img src="img/players/LEYEND.png" class="player-img leyend-img division-position-img-4" id="player-4-img" alt="" />
+                  <p class="division-points division-points-position-4" id="player-4-points">20pts</p>
+                </div>
+
+                <div class="player-5 clasification-position">
+                  <p class="division-category division-a" id="player-5-division">A</p>
+                  <p class="division-position division-postiion-5" id="player-5-position">03</p>
+                  <img src="img/players/SKYNUGGET.png" class="player-img skynugget-img division-position-img-5" id="player-5-img" alt="" />
+                  <p class="division-points division-points-position-5" id="player-5-points">15pts</p>
+                </div>
+
+                <div class="player-6 clasification-position">
+                  <p class="division-category division-a" id="player-6-division">A</p>
+                  <p class="division-position division-postiion-6" id="player-6-position">04</p>
+                  <img src="img/players/GUMIUS.png" class="player-img gumius-img division-position-img-6" id="player-6-img" alt="" />
+                  <p class="division-points division-points-position-6" id="player-6-points">5pts</p>
+                </div>
+
+                <div class="player-7 clasification-position">
+                  <p class="division-category division-a" id="player-7-division">A</p>
+                  <p class="division-position division-postiion-7" id="player-7-position">05</p>
+                  <img src="img/players/JOXERO.png" class="player-img joxero-img division-position-img-7" id="player-7-img" alt="" />
+                  <p class="division-points division-points-position-7" id="player-7-points">0pts</p>
+                </div>
+              </div>
+
+              <div class="clasificación-container container-division-b">
+                <div class="player-8 clasification-position">
+                  <p class="division-category division-b" id="player-8-division">B</p>
+                  <p class="division-position division-postiion-8" id="player-8-position">01</p>
+                  <img src="img/players/AEDON.png" class="player-img aedon-img division-position-img-8" id="player-8-img" alt="" />
+                  <p class="division-points division-points-position-8" id="player-8-points">40pts</p>
+                </div>
+
+                <div class="player-9 clasification-position">
+                  <p class="division-category division-b" id="player-9-division">B</p>
+                  <p class="division-position division-postiion-9" id="player-9-position">01</p>
+                  <img src="img/players/SH4RIN.png" class="player-img sh4rin-img division-position-img-9" id="player-9-img" alt="" />
+                  <p class="division-points division-points-position-9" id="player-9-points">40pts</p>
+                </div>
+
+                <div class="player-10 clasification-position">
+                  <p class="division-category division-b" id="player-10-division">B</p>
+                  <p class="division-position division-postiion-10" id="player-10-position">01</p>
+                  <img src="img/players/IBORRA.png" class="player-img iborra-img division-position-img-10" id="player-10-img" alt="" />
+                  <p class="division-points division-points-position-10" id="player-10-points">40pts</p>
+                </div>
+
+                <div class="player-11 clasification-position">
+                  <p class="division-category division-b" id="player-11-division">B</p>
+                  <p class="division-position division-postiion-11" id="player-11-position">01</p>
+                  <img src="img/players/XGENESIS.png" class="player-img xgenesis-img division-position-img-11" id="player-11-img" alt="" />
+                  <p class="division-points division-points-position-11" id="player-11-points">40pts</p>
+                </div>
+
+                <div class="player-12 clasification-position">
+                  <p class="division-category division-b" id="player-12-division">B</p>
+                  <p class="division-position division-postiion-12" id="player-12-position">02</p>
+                  <img src="img/players/SOKEMOKE.png" class="player-img sokemoke-img division-position-img-12" id="player-12-img" alt="" />
+                  <p class="division-points division-points-position-12" id="player-12-points">20pts</p>
+                </div>
+
+                <div class="player-13 clasification-position">
+                  <p class="division-category division-b" id="player-13-division">B</p>
+                  <p class="division-position division-postiion-13" id="player-13-position">03</p>
+                  <img src="img/players/DAZ.png" class="player-img daz-img division-position-img-13" id="player-13-img" alt="" />
+                  <p class="division-points division-points-position-13" id="player-13-points">15pts</p>
+                </div>
+
+                <div class="player-14 clasification-position">
+                  <p class="division-category division-b" id="player-14-division">B</p>
+                  <p class="division-position division-postiion-14" id="player-14-position">04</p>
+                  <img src="img/players/HIKI.png" class="player-img HIKI division-position-img-14" id="player-14-img" alt="" />
+                  <p class="division-points division-points-position-14" id="player-14-points">10pts</p>
+                </div>
+
+                <div class="player-15 clasification-position">
+                  <p class="division-category division-b" id="player-15-division">B</p>
+                  <p class="division-position division-postiion-15" id="player-15-position">05</p>
+                  <img src="img/players/APOPAINO.png" class="player-img apopaino-img division-position-img-15" id="player-15-img" alt="" />
+                  <p class="division-points division-points-position-15" id="player-15-points">10pts</p>
+                </div>
+              </div>
+            </div>
+            <i class="clasification-icons ph ph-arrow-circle-right"></i>
+          </div>
+        </div>
+      </section>
+
+      <!-- HOW IT WORKS -->
+      <section class="how-it-works-parent-container" id="how-it-works-id">
+        <div class="how-it-works-container">
+          <h2>Como funciona?</h2>
+          <ul class="how-it-works-list">
+            <ul class="how-it-works">
+              <div class="how-it-works-header">
+                <i class="list-icon ph-fill ph-gear"></i>
+                <h3>Sistema</h3>
+                <i class="ph ph-caret-down sistema-down-arrow"></i>
+              </div>
+              <ul class="sistema">
+                <li class="steps-li-element">LA ARENA la integran 2 divisiones, A y B, con 8 jugadores cada una.</li>
+                <li class="steps-li-element">
+                  Cada temporada se extiende por 9 semanas:
+                  <ul>
+                    <li class="steps-li-element-details">7 correspondientes a la fase regular</li>
+                    <li class="steps-li-element-details">1 a la fase final de la division A</li>
+                    <li class="steps-li-element-details">1 a la fase de ascensos y descensos</li>
+                  </ul>
+                </li>
+                <li class="steps-li-element">
+                  Al inicio de cada nueva temporada se celebra un torneo clasificatorio abierto para acceder a los puesto libres de la division B.
+                  <p class="call-to-action">Esta es tu oportunidad de entrar en LA ARENA</p>
+                </li>
+              </ul>
+            </ul>
+
+            <ul class="how-it-works">
+              <div class="how-it-works-header">
+                <i class="list-icon ph-fill ph-ranking"></i>
+                <h3>Puntuacion</h3>
+                <i class="ph ph-caret-down puntuacion-down-arrow"></i>
+              </div>
+              <ul class="puntuacion">
+                <li class="steps-li-element">El ganador de un FT5 ganará 40 puntos.</li>
+                <li class="steps-li-element">El perdedor de un FT5 ganará 5 puntos por partida ganada.</li>
+                <li class="steps-li-element">
+                  Proporcionalmente, perder dos FT5 con un resultado de 5-4 equivaldrá a haber ganado un FT5. Intentamos mantener a todos los
+                  jugadores en competición REAL.
+                </li>
+                <li class="steps-li-element">
+                  En caso de empate entre dos jugadores al finalizar la fase regular, aquél que haya ganado el enfrentamiento directo durante la
+                  misma, mantendrá la posición superior frente al otro.
+                </li>
+                <li class="steps-li-element">Las puntuaciones se publicarán semanalmente.</li>
+              </ul>
+            </ul>
+            <ul class="how-it-works">
+              <div class="how-it-works-header">
+                <i class="list-icon ph-fill ph-list-dashes"></i>
+                <h3>Formato</h3>
+                <i class="ph ph-caret-down formato-down-arrow"></i>
+              </div>
+              <ul class="formato">
+                <li class="steps-li-element">
+                  Cada semana a los jugadores se les asignará aleatoriamente un enfrentamiento (distinto por cada semana, estilo round robin). Ambos
+                  disputarán un FT5.
+                </li>
+                <li class="steps-li-element">
+                  El ganador de dicho enfrentamiento sumará una puntuación de victoria que se mantendrá a lo largo de la fase regular.
+                </li>
+                <li class="steps-li-element">
+                  El perdedor de dicho enfrentamiento sumará una puntuación residual, proporcional a las partidas ganadas durante el mismo, que se
+                  mantendrá a lo largo de la fase regular
+                </li>
+                <li class="steps-li-element">
+                  Al final de cada semana durante la fase regular, los 8 jugadores de cada división serán ordenados del 1 al 8 en función de los
+                  puntos acumulados. Esta clasificación se publicará en twitter y discord
+                </li>
+                <li class="steps-li-element">
+                  Al cabo de la fase regular, en la división A, aquellos 4 jugadores con mayor puntuación acumulada se enfrentarán en la fase final,
+                  que consiste en un bracket estilo playoffs knockout FT5.
+                </li>
+
+                <li class="steps-li-element">Dicho formato, playoffs knockout, se explicará a través del siguiente ejemplo:</li>
+                <div class="table-container">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>Jugador</th>
+                        <th>Puntos</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Jugador 1</td>
+                        <td>280</td>
+                      </tr>
+                      <tr>
+                        <td>Jugador 2</td>
+                        <td>260</td>
+                      </tr>
+                      <tr>
+                        <td>Jugador 3</td>
+                        <td>215</td>
+                      </tr>
+                      <tr>
+                        <td>Jugador 4</td>
+                        <td>172</td>
+                      </tr>
+                      <tr>
+                        <td>Jugador 5</td>
+                        <td>140</td>
+                      </tr>
+                      <tr>
+                        <td>Jugador 6</td>
+                        <td>95</td>
+                      </tr>
+                      <tr>
+                        <td>Jugador 7</td>
+                        <td>50</td>
+                      </tr>
+                      <tr>
+                        <td>Jugador 8</td>
+                        <td>0</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <li class="steps-li-element">En este caso, Jugadores 1, 2, 3 Y 4 pasarán a la fase final y se enfrentarán de la siguiente forma:</li>
+                <ul>
+                  <li class="steps-li-element-details">Cuartos de Final: Jugador 4 vs. Jugador 3.</li>
+                  <li class="steps-li-element-details">Semifinales: Jugador 2 vs. Ganador Cuartos de Final.</li>
+                  <li class="steps-li-element-details">Final: Jugador 1 vs. Ganador Semifinales.</li>
+                </ul>
+                <li class="steps-li-element">El ganador de dicho bracket será proclamado como campeón de la arena</li>
+
+                <li class="steps-li-element">Top 3 recibirán premio</li>
+
+                <li class="steps-li-element">Para finalizar la temporada se jugará la fase de ascensos y descensos</li>
+                <p>Division A:</p>
+                <div class="table-container">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>Jugador</th>
+                        <th>Puntos</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Jugador 1</td>
+                        <td>280</td>
+                      </tr>
+                      <tr>
+                        <td>Jugador 2</td>
+                        <td>260</td>
+                      </tr>
+                      <tr>
+                        <td>Jugador 3</td>
+                        <td>215</td>
+                      </tr>
+                      <tr>
+                        <td>Jugador 4</td>
+                        <td>172</td>
+                      </tr>
+                      <tr>
+                        <td>Jugador 5</td>
+                        <td>140</td>
+                      </tr>
+                      <tr>
+                        <td>Jugador 6</td>
+                        <td>95</td>
+                      </tr>
+                      <tr>
+                        <td>Jugador 7</td>
+                        <td>50</td>
+                      </tr>
+                      <tr>
+                        <td>Jugador 8</td>
+                        <td>0</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <p>Division B:</p>
+                <div class="table-container">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>Jugador</th>
+                        <th>Puntos</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Jugador 9</td>
+                        <td>250</td>
+                      </tr>
+                      <tr>
+                        <td>Jugador 10</td>
+                        <td>240</td>
+                      </tr>
+                      <tr>
+                        <td>Jugador 11</td>
+                        <td>199</td>
+                      </tr>
+                      <tr>
+                        <td>Jugador 12</td>
+                        <td>185</td>
+                      </tr>
+                      <tr>
+                        <td>Jugador 13</td>
+                        <td>120</td>
+                      </tr>
+                      <tr>
+                        <td>Jugador 14</td>
+                        <td>80</td>
+                      </tr>
+                      <tr>
+                        <td>Jugador 15</td>
+                        <td>67</td>
+                      </tr>
+                      <tr>
+                        <td>Jugador 16</td>
+                        <td>22</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <li class="steps-li-element">En este caso Jugadores 6, 7, 8, 9, 10 y 11 se enfrentarán a la fase de ascensos y descensos:</li>
+                <ul>
+                  <li class="steps-li-element-details">Jugador 8 desciende a la DIVISIÓN B.</li>
+                  <li class="steps-li-element-details">Jugador 9 asciende a la DIVISIÓN A. (posible premio)</li>
+                  <li class="steps-li-element-details">
+                    Jugadores 7 y 10 se enfrentarán en FT5. El ganador ascenderá (o se mantendrá) en la DIVISIÓN A, el perdedor descenderá (o se
+                    mantendrá) en la DIVISIÓN B.
+                  </li>
+                  <li class="steps-li-element-details">
+                    Jugadores 6 y 11 se enfrentan en FT5. El ganador ascenderá (o se mantendrá) en la DIVISIÓN A, el perdedor descenderá (o se
+                    mantendrá) en la DIVISIÓN B.
+                  </li>
+                </ul>
+                <li class="steps-li-element">
+                  Cómo último punto, los 4 jugadores con menor puntuación de la DIVISIÓN B serán expulsados de la misma.
+                </li>
+                <li class="steps-li-element">
+                  Una nueva temporada de LA ARENA empezará con un torneo clasificatorio que permita a los 4 mejores entrar en la DIVISIÓN B.
+                </li>
+              </ul>
+            </ul>
+          </ul>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="faq-parent-container" id="faq-id">
+        <div class="faq-container">
+          <h2>F.A.Q</h2>
+          <ul class="faq-list">
+            <li class="faq-list-item">
+              <h3>Que es esto?</h3>
+              <h4>Una liga comunitaria de Street Fighter 6 para jugadores residentes en Espana.</h4>
+            </li>
+            <li class="faq-list-item">
+              <h3>Como me apunto?</h3>
+              <h4>Uniendote al <a href="">Discord</a> y jugando el torneo clasificatorio que se celebra al inicio de cada nueva temporada.</h4>
+            </li>
+            <li class="faq-list-item">
+              <h3>Donde lo veo?</h3>
+              <h4 id="list-item-remove-margin-bottom">
+                La retrasmision en directo en los canales de Twitch de <a href="">Sharin</a>, <a href="">Joxero</a>, o <a href="">Gumius</a>.
+              </h4>
+              <h4>Los VODs los podeis encontrar en el canal de <a id="youtube-link" href="">Youtube</a>.</h4>
+            </li>
+
+            <li class="faq-list-item">
+              <h3>Cuando se juega?</h3>
+              <h4>Viernes y Sabados (o Domingos) a las 19:00 de la tarde (GMT+1).</h4>
+              <!-- CALENDAR -->
+              <section style="background: #40407a; opacity: 85%">
+                <iframe
+                  id="calendario"
+                  class="calendar"
+                  src="https://calendar.google.com/calendar/embed?src=kiintobor.main%40gmail.com&ctz=Europe%2FMadrid"
+                  style="border: 0"
+                  width="100%"
+                  max-width="750px"
+                  height="500px"
+                  frameborder="0"
+                  scrolling="no"
+                ></iframe>
+              </section>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="contact-parent-container" id="contact-id">
+        <div class="contact-container">
+          <h2 class="contact-title">Contacto</h2>
+
+          <form>
+            <!-- <input name="name" type="text" class="feedback-input" placeholder="Name" />    -->
+            <input name="email" type="text" class="feedback-input" placeholder="Email" />
+            <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
+            <input type="submit" value="ENVIAR" />
+          </form>
+        </div>
+      </section>
+
+      <footer class="footer-parent-container">
+        <div class="footer-container">
+          <div class="footer-logos">
+            <a href=""><i class="ph-fill ph-discord-logo"></i></a>
+            <a href=""><i class="ph-fill ph-twitch-logo"></i></a>
+            <a href=""><i class="ph-fill ph-x-logo"></i></a>
+            <a href=""><i class="ph-fill ph-youtube-logo"></i></a>
+          </div>
+        </div>
+        <span class="copyright"> Copyright &copy; <span class="year">2024</span> by LA_ARENA All rights reserved. </span>
+      </footer>
+    </main>
+
+    <!-- <script type="text/javascript" src="js/main.js"></script> -->
   </body>
 </html>

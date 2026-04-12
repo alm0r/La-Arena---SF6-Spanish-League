@@ -1,0 +1,506 @@
+/* - Spacing System (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
+
+/* ********************************* */
+/* BELOW  1920px screen resolution (Average Desktops)
+/* ********************************* */
+
+/* 1920/16 = 120 */
+@media (max-width: 120em) {
+  .header-container {
+    max-width: 160rem;
+  }
+
+  .header-right-container {
+    margin-right: 10rem;
+  }
+
+  .hero-parent-container {
+    max-width: 160rem;
+    height: 72rem;
+    margin-bottom: 16rem;
+    /* border: 2px solid red; */
+  }
+
+  .left-side-hero-container {
+    width: 100%;
+    height: auto;
+    padding-right: 4.4rem;
+    padding-top: 10rem;
+  }
+
+  .left-side-hero-container h1 {
+    margin-bottom: 2rem;
+    font-size: 6rem;
+  }
+  .h1-accent {
+    font-size: 6.4rem;
+    text-transform: uppercase;
+    color: var(--acctent-primary);
+  }
+
+  .left-side-hero-container h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-bottom: 2rem;
+  }
+
+  .la-arena-text {
+    font-size: 2rem;
+    font-weight: 800;
+    /* letter-spacing: -0.05rem; */
+  }
+
+  .clasificación-container.display-slide {
+    /* border: 2px solid orange; */
+    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .player-img {
+    max-height: 6rem;
+  }
+
+  .arena-main-logo {
+    object-fit: scale-down;
+  }
+}
+
+/* ********************************* */
+/* BELOW  1344px screen resolution (Smalled Desktops)
+/* ********************************* */
+
+/* 1344/16 = 84 */
+@media (max-width: 84em) {
+  .header-container {
+    max-width: 110rem;
+  }
+
+  .header-right-container {
+    margin-right: 4rem;
+  }
+
+  .hero-parent-container {
+    max-width: 110rem;
+    height: 60rem;
+    margin-bottom: 16rem;
+  }
+
+  #discord-header {
+    padding-left: 2rem;
+  }
+  .left-side-hero-container {
+    width: 100%;
+    height: auto;
+    padding-right: 4.4rem;
+    padding-left: 2rem;
+    display: grid;
+  }
+
+  .left-side-hero-container h1 {
+    margin-bottom: 2rem;
+    font-size: 3.2rem;
+  }
+
+  .h1-accent {
+    font-size: 4.4rem;
+    text-transform: uppercase;
+    color: var(--acctent-primary);
+  }
+
+  .left-side-hero-container h3 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.4;
+    margin-bottom: 2rem;
+  }
+
+  .la-arena-text {
+    font-size: 2rem;
+    font-weight: 800;
+
+    /* letter-spacing: -0.05rem; */
+  }
+
+  .arena-main-logo {
+    object-fit: scale-down;
+    width: 30rem;
+  }
+
+  .right-side-hero-container h2 {
+    font-family: "Science Gothic", "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 4.4rem;
+    text-align: center;
+    letter-spacing: -0.1rem;
+    color: var(--primary-tint-medium-2);
+  }
+
+  .clasificación-container.display-slide {
+    gap: 2.4rem;
+  }
+
+  .clasification-position p {
+    font-size: 2.4rem;
+    font-family: "Science Gothic", "Roboto", sans-serif;
+    font-weight: 600;
+  }
+
+  .player-img {
+    max-height: 4rem;
+  }
+
+  .clasification-parent-container {
+    gap: 3.2rem;
+  }
+
+  .clasification-icons {
+    font-size: 3.2rem;
+  }
+
+  .ph-arrow-circle-left {
+    left: -5%;
+  }
+
+  .ph-arrow-circle-right {
+    right: -5%;
+  }
+}
+
+/* ********************************* */
+/* BELOW  1277px screen resolution (1440p screen vertical split)
+/* ********************************* */
+/* 1024/16 = 80 */
+
+/* @media (max-width: 80rem) {
+  .hero-parent-container {
+    max-width: 110rem;
+    height: 100rem;
+    margin-bottom: 16rem;
+  }
+
+  .player-img {
+    max-height: 5rem;
+  }
+
+  .clasificación-container.display-slide {
+    gap: 6rem;
+  }
+
+  .clasification-position {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 2rem 4rem auto 1fr;
+    gap: 2.4rem;
+    padding: 0rem 1.2rem;
+    align-items: end;
+    background-color: var(--primary-shade-medium);
+    box-shadow: 0 3.2rem 8rem rgba(0, 0, 0, 0.2);
+  }
+
+  .clasification-icons {
+    font-size: 5.2rem;
+  }
+
+  .ph-arrow-circle-left {
+    left: 35%;
+    top: 115%;
+  }
+
+  .ph-arrow-circle-right {
+    right: 35%;
+    top: 115%;
+  }
+} */
+
+/* ********************************* */
+/* BELOW  1024px screen resolution 
+/* ********************************* */
+/* 1024/16 = 64 */
+
+@media (max-width: 64em) {
+  .player-img {
+    max-height: 4rem;
+  }
+
+  .clasification-position p {
+    font-size: 2rem;
+    font-family: "Science Gothic", "Roboto", sans-serif;
+    font-weight: 600;
+  }
+
+  .clasification-position {
+    grid-template-columns: 3.2rem 3.2rem auto 1fr;
+    gap: 2rem;
+  }
+}
+/* ********************************* */
+/* BELOW  944px screen resolution (1080p vertical split and Tables)
+/* ********************************* */
+/* 944/16 = 59 */
+
+@media (max-width: 62em) {
+  .header-container {
+    justify-content: center;
+  }
+
+  #discord-header {
+    margin-right: 4rem;
+  }
+
+  .hero-parent-container {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    max-width: 70rem;
+    height: 180rem;
+    margin-bottom: 12rem;
+    gap: 6.4rem;
+  }
+
+  .left-side-hero-container {
+    /* border: 2px solid white; */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+
+  .left-side-hero-container h1 {
+    margin-bottom: 4rem;
+    color: var(--primary-tint-medium-2);
+    font-size: 6.2rem;
+  }
+
+  .h1-accent {
+    font-size: 7.4rem;
+    text-transform: uppercase;
+    color: var(--acctent-primary);
+  }
+
+  .left-side-hero-container h3 {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.4;
+    margin-bottom: 2rem;
+  }
+
+  .la-arena-text {
+    font-size: 2.4rem;
+    font-weight: 800;
+
+    /* letter-spacing: -0.05rem; */
+  }
+
+  .arena-main-logo {
+    width: 75%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .right-side-hero-container h2 {
+    font-size: 5.2rem;
+  }
+
+  .player-img {
+    max-height: 5rem;
+    width: auto;
+  }
+
+  .clasificación-container.display-slide {
+    gap: 4rem;
+  }
+
+  .clasification-position p {
+    font-size: 2.4rem;
+    font-family: "Science Gothic", "Roboto", sans-serif;
+    font-weight: 600;
+  }
+
+  .clasification-icons {
+    font-size: 5.2rem;
+  }
+
+  .ph-arrow-circle-left {
+    position: absolute;
+    top: 110%;
+    left: 35%;
+  }
+
+  .ph-arrow-circle-right {
+    top: 110%;
+    right: 35%;
+    position: absolute;
+  }
+
+  .contact-parent-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .footer-parent-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+/* ********************************* */
+/* BELOW  550px screen resolution (Mobile)
+/* ********************************* */
+/* 550/16 = 34em */
+
+@media (max-width: 34em) {
+  h2 {
+    font-size: 3rem;
+  }
+
+  .header-container {
+    border: 2px solid goldenrod;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3rem;
+    position: relative;
+  }
+
+  .list-icon-header {
+    display: block;
+  }
+
+  .close-icon-header {
+    display: none;
+  }
+
+  .main-nav-list {
+    display: flex;
+    border: 2px solid orange;
+    flex-direction: column;
+    justify-content: space-around;
+    /* gap: 8rem; */
+    text-align: center;
+    position: absolute;
+    overflow: hidden;
+    bottom: 0;
+    right: 0;
+    /* padding: 0rem 2rem; */
+    height: 0;
+    width: 100%;
+    transform: translate(0%, 100%);
+    background-color: var(--primary-shade-medium);
+    transition: height 0.3s;
+  }
+
+  .hero-parent-container {
+    margin-bottom: 4rem;
+  }
+
+  .left-side-hero-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .left-side-hero-container h1 {
+    font-size: 5.2rem;
+  }
+
+  .h1-accent {
+    font-size: 6.2rem;
+    text-transform: uppercase;
+    color: var(--acctent-primary);
+  }
+
+  .left-side-hero-container h3 {
+    font-size: 1.8rem;
+  }
+
+  .la-arena-text {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  .right-side-hero-container h2 {
+    font-size: 3.6rem;
+  }
+
+  .clasification-position {
+    display: grid;
+    grid-template-columns: 2rem 2rem auto 1fr;
+    gap: 1rem;
+  }
+
+  /* Sizes of the player layout */
+  .player-img {
+    max-height: 4rem;
+    width: auto;
+  }
+
+  .clasification-position p {
+    font-size: 1.6rem;
+  }
+
+  .clasification-icons {
+    font-size: 5.2rem;
+  }
+
+  .ph-arrow-circle-left {
+    position: absolute;
+    top: 115%;
+    left: 30%;
+  }
+
+  .ph-arrow-circle-right {
+    top: 115%;
+    right: 30%;
+    position: absolute;
+  }
+
+  .how-it-works h3 {
+    font-size: 2.4rem;
+  }
+
+  .list-icon {
+    color: var(--accent);
+    font-size: 2rem;
+  }
+
+  .how-it-works-container {
+    font-size: 1.4rem;
+  }
+
+  .sistema,
+  .puntuacion,
+  .formato {
+    padding: 1.6rem 3.2rem;
+  }
+
+  .contact-parent-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .footer-parent-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+/* ********************************* */
+/* BELOW  440px screen resolution (Small Mobile)
+/* ********************************* */
+/* 40/16 = 27em */
+
+@media (max-width: 27em) {
+  .clasification-position {
+    display: grid;
+    grid-template-columns: 2rem 2rem auto 1fr;
+    gap: 1rem;
+  }
+
+  /* Sizes of the player layout */
+  .player-img {
+    max-height: 3rem;
+    width: auto;
+  }
+}
