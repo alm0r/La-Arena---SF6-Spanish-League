@@ -422,6 +422,22 @@ header a:hover {
   font-weight: 600;
 }
 
+.mantains {
+  color: var(--accent);
+}
+
+.promotion {
+  color: var(--accent);
+}
+
+.descend {
+  color: #7b0828;
+}
+
+.playoff {
+  color: #cd5334;
+}
+
 /* //////////////////////////////////////////////////// */
 /* HOW IT WORKS */
 /* //////////////////////////////////////////////////// */
@@ -569,7 +585,7 @@ ul p {
   /* background-color: var(--primary-shade-medium); */
   /* box-shadow: 0 0 30px rgba(0, 0, 0, 0.3); */
 
-  padding-top: 6.4rem;
+  padding-top: 4rem;
   margin-bottom: 12rem;
 }
 
