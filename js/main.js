@@ -69,8 +69,6 @@ async function getSheetData() {
   try {
     const res = await fetch("https://docs.google.com/spreadsheets/d/1AI-Lj_R4JQWqo1ud3oWHEcnhUJtFPQCcYW_AoJbP8Mw/gviz/tq?sheet=Clasificacion");
 
-    // const res = await fetch(GOOGLE_API_KEY);
-
     if (!res.ok) {
       throw new Error("Could not fetch resource");
     }

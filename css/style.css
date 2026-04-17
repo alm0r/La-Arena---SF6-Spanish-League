@@ -130,6 +130,7 @@ body {
   color: #555;
 
   background: #40407a;
+
   color: var(--primary-tint-light);
   /* Only works if there is nothing absolutely positioned in relation to body */
   overflow-x: hidden;
