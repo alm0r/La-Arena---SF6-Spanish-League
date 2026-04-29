@@ -2,7 +2,7 @@
 
 # LA Arena - Street Fighter 6 Spanish League
 
-![la-arena-site-img]https://i.imgur.com/vX9Nxbi.png
+![la-arena-site-img](https://i.imgur.com/vX9Nxbi.png)
 
 This sites serves as the main reference for Spanish Street Fighter 6 Community League.
 
