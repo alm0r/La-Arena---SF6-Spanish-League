@@ -62,7 +62,7 @@ const currentYear = new Date().getFullYear();
 
 yearEl.textContent = currentYear;
 
-// FETCH GOOGLE SHEET LOGIC AND PRINT THE CLASIFICATION
+// FETCH GOOGLE SHEET DATA AND PRINT THE CLASIFICATION
 
 // Fetchs the data from the google sheet classification
 async function getSheetData() {
@@ -91,15 +91,14 @@ async function getPLayersData() {
     // console.log(playersApiData.table.rows.length);
     // console.log(playersApiData.table.rows[0].c[0].v);
 
-    //This loop uses the iterationCycle = i to link to the various html #ids that have already been definied before-hand with the proper numbers,
-    // so every iteration equals to each playerObject from the returned Array
+    //This loop uses the iterationCycle = i and match the html #ids, so every iteration matches each playerObject from the returned Array
     // The -1 in playersApiData.table.rows.length - 1 is not necesary but prevents an message.error in the console created by the updateMessage
     // thats happens when adding then new row in the sheet (under the clasification) that eneables to also print a small message with the update date
     // IF THERE IS ANY ERROR WITH THE LOGIC DELETE ANY EXTRA DATA IN THE GOOGLE SHEET THAT IS NOT PART OF CLASIFICATION
     for (let i = 0; i < playersApiData.table.rows.length - 1; i++) {
       let iterationCycle = i;
       let playerObject = playerRows[i].c;
-      // This loop cycles between the diferent the different array elements for any player object given, and uses it along with an if statement to access each property value
+      // This loop cycles between the different array elements for any playerObject and uses it along with an if statement to access each property value
       for (let i = 0; i < playerObject.length; i++) {
         let playerLeague = playersApiData.table.rows[iterationCycle].c[0].v;
         let playerPosition = playersApiData.table.rows[iterationCycle].c[1].v;
@@ -108,8 +107,8 @@ async function getPLayersData() {
 
         // console.log(iterationCycle, playerObject[i].v);
 
-        // Every iteration of the playerObject matches one the of properties we want to print on the clasification, so everytime the loops runs [i] it takes that property and print it in
-        // the proper html element (document.getElementById)
+        // Every iteration of the playerObject matches one the of properties we want to print on the clasification,
+        //  so everytime the loops runs [i] it takes that property and prints it in the proper html element (document.getElementById)
         if (i === 0) {
           printPlayerLeague(iterationCycle, playerLeague);
         } else if (i === 1) {
@@ -127,19 +126,24 @@ async function getPLayersData() {
 }
 getPLayersData();
 
-// Helping functions
+// HELPING FUNCTIONS
+
+// Prints clasification division
 function printPlayerLeague(division, value) {
   document.getElementById(`player-${division}-division`).innerText = value;
 }
 
+// Prints clasification position
 function printPlayerPosition(position, value) {
   document.getElementById(`player-${position}-position`).innerText = value;
 }
 
+// Prints clasification player-img
 function printPlayerName(img, value) {
   document.getElementById(`player-${img}-img`).src = `img/players/${value}.png`;
 }
 
+// Prints clasificataion points
 function printPlayerPoints(points, value) {
   document.getElementById(`player-${points}-points`).innerText = value;
 }

@@ -2,34 +2,20 @@
 
 # My Awesome Project
 
-This sites serves as the main reference for the different Street Fighter 6 leagues organized by the spanish community.
+This sites serves as the main reference for Spanish Street Fighter 6 Community League.
 
-**Link to project:** http://recruiters-love-seeing-live-demos.com/
-
-![alt tag](http://placecorgi.com/1200/650)
+**Link to project:** https://alm0r.github.io/La-Arena---SF6-Spanish-League/
 
 ## How It's Made:
 
-**Tech used:** HTML, CSS, JavaScript, Framework of choice
+**Tech used:** HTML, CSS, JavaScript, Netlify
 
-Here's where you can go to town on how you actually built this thing. Write as much as you can here, it's totally fine if it's not too much just make sure you write _something_. If you don't have too much experience on your resume working on the front end that's totally fine. This is where you can really show off your passion and make up for that ten fold.
+This is basically a static website but get feeds the Google Sheet database that the Admins of the league use to keep track of the general clasification (points, positions, divisions, etc) week to week. There is no backend code but, the main script fetchs the data from the Google Sheets API and render it on the DOM, allowing the website to get upadted as soon as a match is played and and Admin updtes their oficial sheet.
 
-## Optimizations
-
-_(optional)_
-
-You don't have to include this section but interviewers _love_ that you can not only deliver a final product that looks great but also functions efficiently. Did you write something then refactor it later and the result was 5x faster than the original implementation? Did you cache your assets? Things that you write in this section are **GREAT** to bring up in interviews and you can use this section as reference when studying for technical interviews!
+It also display the Google Calendar used by the Admins, so everytime they make a change or update a date it gets reflected instantly on the website.
 
 ## Lessons Learned:
 
-No matter what your experience level, being an engineer means continuously learning. Every time you build something you always have those _whoa this is awesome_ or _wow I actually did it!_ moments. This is where you should share those moments! Recruiters and interviewers love to see that you're self-aware and passionate about growing.
+By building this i learned how to use the Google Sheet API in a very raw way. This was the result of trying to get the website be able to operate without a webmaster o needing someone to manually upadte the classifications score everytime a new match was played. Since the Admins were already using Google Sheets as a form of database to keep track of the league, it was just natural to use it to keep things as simple as possible.
 
-## Examples:
-
-Take a look at these couple examples that I have in my own portfolio:
-
-**Palettable:** https://github.com/alecortega/palettable
-
-**Twitter Battle:** https://github.com/alecortega/twitter-battle
-
-**Patch Panel:** https://github.com/alecortega/patch-panel
+All i had to do was refactor one of their sheets in a way that make easier for the API to consume so the data comming was orgized and optmized in a way the served the site needs.
