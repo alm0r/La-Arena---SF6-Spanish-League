@@ -2,9 +2,9 @@
 
 # LA Arena - Street Fighter 6 Spanish League
 
-This sites serves as the main reference for Spanish Street Fighter 6 Community League.
+https://i.imgur.com/vX9Nxbi.png
 
-<blockquote class="imgur-embed-pub" lang="en" data-id="vX9Nxbi"><a href="https://imgur.com/vX9Nxbi">View post on imgur.com</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+This sites serves as the main reference for Spanish Street Fighter 6 Community League.
 
 **Link to project:** https://alm0r.github.io/La-Arena---SF6-Spanish-League/
 
